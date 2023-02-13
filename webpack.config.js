@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devServer: {
+    allowedHosts: ['.preview.csb.app'],
     static: './dist',
   },
   entry: path.join(__dirname, '/src/index.js'),
